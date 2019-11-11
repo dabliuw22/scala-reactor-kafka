@@ -19,7 +19,7 @@ object ConsumerKafka extends App {
   consumerSettings.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG,
     classOf[StringDeserializer])
   consumerSettings.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG,
-    classOf[EventDeserializer[Event]])
+    classOf[EventDeserializer[_]])
   consumerSettings.put(ConsumerConfig.GROUP_ID_CONFIG, `groupId`)
   consumerSettings.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, `autoCommit`)
   consumerSettings.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, `autoOffset`)

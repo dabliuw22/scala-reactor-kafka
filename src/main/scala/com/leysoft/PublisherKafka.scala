@@ -18,7 +18,7 @@ object PublisherKafka extends App {
   producerSettings.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG,
     classOf[StringSerializer])
   producerSettings.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,
-    classOf[EventSerializer[Event]])
+    classOf[EventSerializer[_]])
   producerSettings.put(ProducerConfig.CLIENT_ID_CONFIG, `clientId`)
   producerSettings.put(ProducerConfig.BATCH_SIZE_CONFIG, `batchSize`)
   producerSettings.put(ProducerConfig.LINGER_MS_CONFIG, `lingerMilliseconds`)
