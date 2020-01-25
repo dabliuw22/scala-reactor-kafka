@@ -16,7 +16,6 @@ libraryDependencies ++= Seq(
   "io.projectreactor" % "reactor-scala-extensions_2.13.0-M3" % "0.4.7",
   "io.projectreactor.kafka" % "reactor-kafka" % "1.2.0.RELEASE",
   "com.fasterxml.jackson.module" %% "jackson-module-scala" % "2.10.0",
-  //"com.fasterxml.jackson.core" % "jackson-databind" % "2.10.0",
   scalaLoggingParent %% "scala-logging" % scalaLoggingVersion,
   logbackParent % "logback-classic" % logbackVersion,
 )
